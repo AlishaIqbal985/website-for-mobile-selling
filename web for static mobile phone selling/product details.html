@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo2.png" alt="Moniloft Logo">
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Pages</a>
+                <div class="dropdown-content">
+                    <a href="product listing.html">Product Listing</a>
+                    <a href="product details.html">Product Details</a>
+                    <a href="privacy.html">Privacy</a>
+                    <!-- <a href="checkout.html">checkout</a>
+            <a href="wl.html">Wishlist</a>
+            <a href="Add To Cart.html">Add to Cart</a> -->
+                </div>
+            </div>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="a">
+                <div class="social-icons-b">
+                    <a href="" target="_blank"><i class="fa-solid fa-cart-plus"></i></a><br>
+                    <a href="" target="_blank"><i class="fa-regular fa-heart"></i></a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--                           main -->
+    <section>
+
+
+        <main>
+            <section class="product-detail">
+
+                <div class="gallery">
+                    <div class="large-image">
+                        <img id="mainImage" src="img/tmb5.jpg" alt="Main Image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="img/tmb4.jpg" alt="Thumbnail 1" onclick="changeImage('img/tmb4.jpg')">
+                        <img src="img/tmb3.jpg" alt="Thumbnail 2" onclick="changeImage('img/tmb3.jpg')">
+                        <img src="img/tmb2.jpg" alt="Thumbnail 3" onclick="changeImage('img/tmb2.jpg')">
+                        <img src="img/tmb1.jpg" alt="Thumbnail 4" onclick="changeImage('img/tmb1.jpg')">
+                    </div>
+                </div>
+
+                <script>
+                    function changeImage(imageSrc) {
+                        document.getElementById('mainImage').src = imageSrc;
+                    }
+                </script>
+
+
+                <div class="product-info">
+                    <h1>Product Name: iPhone 16
+                    </h1>
+                    <p class="price">
+                        <span class="current-price">$67.48</span>
+                        <span class="original-price">$89.98</span>
+                        <span class="discount">25% off</span>
+                    </p>
+                    <p class="stock-status">In Stock</p>
+                    <p class="description">The iPhone 16 introduces a revolutionary design with cutting-edge technology.
+                        Featuring a powerful A18 Bionic chip, an advanced dual-camera system, and a stunning 6.3-inch
+                        ProMotion OLED display, it delivers unparalleled performance and crystal-clear visuals. With
+                        improved battery life, 5G connectivity, and iOS 18, the iPhone 16 sets a new standard for
+                        smartphones. Thanks to the virtual assistant Alexa, you can control your smart home devices with
+                        ease.</p>
+                    <form class="product-options">
+                        <label for="size">Size:</label>
+                        <select id="size" name="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label for="color">Colors:</label>
+                        <div class="color-options">
+                            <input type="radio" id="charcoal" name="color" value="Charcoal">
+                            <label for="charcoal">Charcoal</label>
+                            <input type="radio" id="deep-sea-blue" name="color" value="Deep Sea Blue" checked>
+                            <label for="deep-sea-blue">Deep Sea Blue</label>
+                            <input type="radio" id="glacier-white" name="color" value="Glacier White">
+                            <label for="glacier-white">Glacier White</label>
+                        </div>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        <button type="submit" class="add-to-cart">Add to Cart</button>
+                    </form>
+                </div>
+            </section>
+            <section class="product-description">
+                <h2>Product Description</h2>
+                <p>The iPhone 16 is the latest innovation from Apple, combining elegance, performance, and
+                    groundbreaking technology. Designed for both style and functionality, it features a sleek
+                    aerospace-grade aluminum frame with a Ceramic Shield front for ultimate durability. </p>
+                <h2>Features</h2>
+                <li>
+                    <strong>1.Stunning Display:</strong><p>A 6.3-inch ProMotion OLED display with up to 120Hz refresh rate offers
+                        smooth scrolling and lifelike visuals with HDR10 support. </p>
+                </li>
+                <li>
+                     <strong>2.Advanced Camera System:</strong> <p>Dual 48MP cameras with improved Night Mode, cinematic video recording,
+                        and AI-powered photo editing for professional-quality images.
+                    </p>
+                </li>
+                <li>
+                    <strong>3.Powerful Performance:</strong><p> Equipped with the A18 Bionic chip, the fastest processor ever in a
+                        smartphone, ensuring seamless multitasking, gaming, and app usage. </p>
+                </li>
+                <li>
+                    <strong>4. Connectivity:</strong> <p>Experience blazing-fast 5G speeds and improved Wi-Fi 7 technology for
+                        uninterrupted streaming and downloads. </p>
+                </li>
+
+                <li>
+                    <strong>5. Enhanced Battery Life:</strong><p> Enjoy up to 25 hours of video playback, powered by efficient battery
+                        management and fast charging capabilities. </p>
+                </li>
+            </section>
+        </main>
+        < </section>
+
+
+
+
+            <!--               brand -->
+            <h1>Our Brand</h1>
+            <div class="brand">
+                <div class="brand-side">
+                    <img src="img/brand1.png" alt="Logo">
+
+                    <img src="img/brand2.png" alt="Logo">
+
+                    <img src="img/brand3.png" alt="Logo">
+
+                    <img src="img/brand4.png" alt="Logo">
+
+                    <img src="img/brand5.png" alt="Logo">
+
+                    <img src="img/brand6.png" alt="Logo">
+
+                    <img src="img/brand7.png" alt="Logo">
+
+                    <img src="img/brand8.png" alt="Logo">
+
+                    <img src="img/brand9.png" alt="Logo">
+                </div>
+            </div>
+
+
+
+            <footer class="footer">
+                <div class="container">
+
+                    <div class="two">
+                        <H1>Subscribe our newsletter </H1>
+                        <p>Subscribe to receive updates on our store and special offers.</p>
+                        <div class="search">
+                            <input type="text" placeholder="Your email">
+                            <label for=""></label>
+                            <button type="submit"> <i class="fa-regular fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>About Information</h4>
+                        <p></p>
+                        <div class="app-links">
+                            <a href="#"><i class="fa-brands fa-google-play"></i>Get it on Google Play</a>
+                            <a href="#"><i class="fa-brands fa-windows"></i>Download on the App Store</a>
+                        </div>Moniloft is your trusted destination for premium mobile phones and accessories !
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Contact Us</h4>
+                        <p><i class="fa fa-map-marker"></i> Av. Colon 1234, Buenos Aires, Argentina</p>
+                        <p><i class="fa fa-envelope"></i> Moniloft@example.com</p>
+                        <p><i class="fa fa-phone"></i> (+54) 2284-123456789</p>
+
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/alisha-iqbal-b91611246" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/alexabasra/profilecard/?igsh=MThwYW5hODFpZHkxdw=="
+                                target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/923457979605" target="_blank"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright © 2024 MONIOLOFT.All Rights Reserved <a href="#">Privacy Policy</a> | <a href="#">Terms
+                            and
+                            Conditions</a></p>
+                </div>
+            </footer>
+
+</body>
+
+</html>
